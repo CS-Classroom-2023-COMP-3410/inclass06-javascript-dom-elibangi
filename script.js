@@ -93,7 +93,7 @@ function updateDisplay() {
     const currentTime = new Date();
     const elapsedTime = currentTime - startTime;
     const seconds = Math.floor(elapsedTime / 1000) % 60;
-    const minutes = Math.floor(elapsedTime / (1000 * 60)) % 60;
+    const minutes = Math.floor(elapsedTime / (1000 * 60));
     timerDisplay.innerHTML = "<strong>Time:</strong> " + minutes + " min, " + seconds + " sec";
 };
 
